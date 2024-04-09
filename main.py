@@ -149,16 +149,6 @@ st.image("img/lancer.gif")
 ""
 ""
 
-"#### 'Si ça va, dis moi un mot.'" #Pulp fiction
-if st.text_input("Réponse 13", help="pulp fiction").upper() == "UN MOT" :
-    st.success("💥💥💥 Niveau : Maxi Manu")
-else :
-    st.stop()
-
-""
-""
-""
-
 if not "end" in st.session_state :
     st.session_state.end=True
     st.balloons()
