@@ -9,7 +9,7 @@ import streamlit as st
 ""
 
 "#### 'Donne moi le lui...'" #pulp fiction
-if st.text_input("Réponse 1", help="pulp fiction").upper() == "YOAN" :
+if st.text_input("Réponse 1", help="pulp fiction").upper() in ["YOAN", "YOANN"] :
     st.success("✅ Niveau : Tarde en herbe")
 else :
     st.stop()
