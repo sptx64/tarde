@@ -3,18 +3,13 @@ import streamlit as st
 "# Le boss de fin"
 "Welcome tarde, donne la réponse à toutes les énigmes pour terminer"
 
-"#### 'Si ça va, dis moi un mot.'" #Pulp fiction
-if st.text_input("Réponse 1", help="pulp fiction").upper() == "UN MOT" :
-    st.success("✅ Niveau : graine de tarde")
-else :
-    st.stop()
 
 ""
 ""
 ""
 
-"#### 'D'abord tu pars loin. - Ok - Une fois loin...'" #pulp fiction
-if st.text_input("Réponse 2", help="pulp fiction").upper() == "TU RESTES LOIN" :
+"#### 'Donne moi le lui...'" #pulp fiction
+if st.text_input("Réponse 2", help="pulp fiction").upper() == "YOAN" :
     st.success("✅ Niveau : Tarde en herbe")
 else :
     st.stop()
@@ -88,7 +83,7 @@ st.image("img/olivier.gif")
 ""
 ""
 
-"#### 'Mange' " #135.3db
+"#### 'Il faut que tu les manges...' " #135.3db
 if "tes pates" == st.radio("Réponse 7", ["--", "tes pates", "tes morts", "tes frites", "ton saumon vapeur sur son lit de courgette persillade"], horizontal=True, help="135.3 db") :
     st.success("🥳 Niveau : Grostardmorve")
 else :
@@ -142,7 +137,6 @@ else :
 ""
 ""
 
-
 "#### '(Projectile en direction de Pambrun)' " #oss117
 if st.radio("Réponse 12", ["--", "Paf", "Boom", "PAAAAAAAAAAAAF... AAAAHHHHHHHH"], horizontal=True, help="Ti as vu le grani ?").upper() == "PAAAAAAAAAAAAF... AAAAHHHHHHHH" :
     st.success("💥💥💥 Niveau : Manu")
@@ -150,6 +144,16 @@ else :
     st.stop()
 
 st.image("img/lancer.gif")
+
+""
+""
+""
+
+"#### 'Si ça va, dis moi un mot.'" #Pulp fiction
+if st.text_input("Réponse 1", help="pulp fiction").upper() == "UN MOT" :
+    st.success("💥💥💥 Niveau : Maxi Manu")
+else :
+    st.stop()
 
 ""
 ""
