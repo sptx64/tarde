@@ -9,7 +9,7 @@ import streamlit as st
 ""
 
 "#### 'Donne moi le lui...'" #pulp fiction
-if st.text_input("Réponse 2", help="pulp fiction").upper() == "YOAN" :
+if st.text_input("Réponse 1", help="pulp fiction").upper() == "YOAN" :
     st.success("✅ Niveau : Tarde en herbe")
 else :
     st.stop()
@@ -19,7 +19,7 @@ else :
 ""
 
 "#### 'C'est à une demi heure d'ici. J'y suis dans'" #pulp fiction
-if "DIX MINUTES" in st.text_input("Réponse 3", help="pulp fiction").upper() :
+if "DIX MINUTES" in st.text_input("Réponse 2", help="pulp fiction").upper() :
     st.success("✅ Niveau : Tarde junior")
 else :
     st.stop()
@@ -29,7 +29,7 @@ else :
 ""
 
 "#### 'Jules c'est ' " #pulp fiction
-rep = st.radio("Réponse 4", ["--", "un tarde", "un chanteur", "le noir"], horizontal=True, help="pulp fiction")
+rep = st.radio("Réponse 3", ["--", "un tarde", "un chanteur", "le noir"], horizontal=True, help="pulp fiction")
 if rep == "le noir" :
     st.success("👍 Niveau : Tardinio")
 elif rep == "un tarde" :
@@ -45,7 +45,7 @@ st.image("img/jules_pulp.gif")
 ""
 
 "#### 'Vincent c'est'" #pulp fiction
-rep = st.radio("Réponse 5", ["--", "un tarde", "un chanteur", "le blanc"], horizontal=True, help="pulp fiction")
+rep = st.radio("Réponse 4", ["--", "un tarde", "un chanteur", "le blanc"], horizontal=True, help="pulp fiction")
 if rep == "le blanc" :
     st.success("👍 Niveau : Tardiflette")
 elif rep == "un tarde" :
@@ -150,7 +150,7 @@ st.image("img/lancer.gif")
 ""
 
 "#### 'Si ça va, dis moi un mot.'" #Pulp fiction
-if st.text_input("Réponse 1", help="pulp fiction").upper() == "UN MOT" :
+if st.text_input("Réponse 13", help="pulp fiction").upper() == "UN MOT" :
     st.success("💥💥💥 Niveau : Maxi Manu")
 else :
     st.stop()
