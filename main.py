@@ -163,13 +163,14 @@ if not "end" in st.session_state :
     st.session_state.end=True
     st.balloons()
 
-if st.button("Clique ici") :
-    st.image("img/circle.jpg")
 
 "#### Niveau 438 (Vidéo Jules ou Pierrick)"
+if st.text_input("Rentrer le code entier")=="471" :
+    "Soit 438 + 33, bien joué tardos !"
+    "Maintenant clique ici :"
+    if st.button("Clique ici") :
+        "Tarde."
+        st.image("img/circle.jpg")
 
-""
-""
-""
-
-"Rentrer la réponse à l'énigme principale"
+else :
+    st.stop()
