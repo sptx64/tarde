@@ -159,9 +159,11 @@ else :
 ""
 ""
 
-st.balloons()
+if not "end" in st.session_state :
+    st.session_state.end=True
+    st.balloons()
 
-if st.button("Excellent! Clique ici") :
+if st.button("Clique ici") :
     st.image("img/circle.jpg")
 
 "#### Niveau 438 (Vidéo Jules ou Pierrick)"
