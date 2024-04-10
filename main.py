@@ -153,8 +153,13 @@ if not "end" in st.session_state :
     st.session_state.end=True
     st.balloons()
 
+"Boss de fin : la Marie"
+st.video("vid/a.mp4")
+st.video("vid/b.mp4")
+st.video("vid/c.mp4")
+st.video("vid/d.mp4")
 
-"#### Niveau 438 (Vidéo Jules ou Pierrick)"
+
 if st.text_input("Rentrer le code entier")=="471" :
     "Soit 438 + 33, bien joué tardos !"
     "Maintenant clique ici :"
